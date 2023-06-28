@@ -1,14 +1,14 @@
 package org.drdrapp.userjobservice.dto.request;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Getter
 @Setter
-@RequiredArgsConstructor
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class RequestUserjobDto {
     private Long id;
     private String description;

@@ -1,5 +1,6 @@
 package org.drdrapp.userjobservice.dto.response;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,6 +9,7 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter
+@Builder
 public class ResponseCompanyUserDto {
     private Long id;
     private String familyName;

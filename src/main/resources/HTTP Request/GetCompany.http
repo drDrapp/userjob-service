@@ -1,1 +1,1 @@
-GET http://localhost:8080/get-userjob?company=1
+GET http://localhost:8080/get-userjob?company=1000

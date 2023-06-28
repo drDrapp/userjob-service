@@ -15,6 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
@@ -22,34 +23,30 @@ public class UserjobController {
     private final UserjobService userjobService;
 
     @GetMapping("/get-userjob")
-    public ResponseEntity<?> getUserjobInfo(@RequestParam(value = "user", required = false) Users user,
-                                            @RequestParam(value = "company", required = false) Company company,
-                                            HttpServletRequest request) {
-        if (request.getParameterMap().containsKey("user")) {
+    public ResponseEntity<?> getData(@RequestParam(value = "user", required = false) Users user,
+                                     @RequestParam(value = "company", required = false) Company company,
+                                     @RequestParam(required = false) Map<String, String> params,
+                                     HttpServletRequest request) {
+
+        if (params.isEmpty()) {
+            return ResponseEntity.badRequest().build();
+        } else if (params.containsKey("user")) {
             if (user == null) {
-                return ResponseEntity
-                        .notFound()
-                        .build();
+                return ResponseEntity.notFound().build();
             } else {
                 user.setUserCompanies(userjobService.getUserActiveJobsId(user));
-                return ResponseEntity
-                        .ok(new ResponseDto(new ResponseUserDto(user, userjobService.getUserActiveJobsDto(user)), null));
+                return ResponseEntity.ok(new ResponseDto(new ResponseUserDto(user, userjobService.getUserActiveJobsDto(user)), null));
             }
-        }
-        if (request.getParameterMap().containsKey("company")) {
+        } else if (params.containsKey("company")) {
             if (company == null) {
-                return ResponseEntity
-                        .notFound()
-                        .build();
+                return ResponseEntity.notFound().build();
             } else {
                 company.setCompanyUsers(userjobService.getCompanyActiveUsersId(company));
-                return ResponseEntity
-                        .ok(new ResponseDto(null, new ResponseCompanyDto(company, userjobService.getCompanyActiveUsersDto(company))));
+                return ResponseEntity.ok(new ResponseDto(null, new ResponseCompanyDto(company, userjobService.getCompanyActiveUsersDto(company))));
             }
+        } else {
+            return ResponseEntity.badRequest().build();
         }
-        return ResponseEntity
-                .badRequest()
-                .build();
     }
 
     @PostMapping(value = "/create-userjob")

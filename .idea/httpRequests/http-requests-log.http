@@ -1,5 +1,453 @@
 PATCH http://localhost:8080/update-userjob
 Content-Type: application/json
+Content-Length: 648
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "user": {
+    "id": 10000,
+    "familyName": "Невский+",
+    "middleName": "+",
+    "firstName": "Александр+",
+    "birthday": "1221-05-13",
+    "gender": "M",
+    "age": 803,
+    "description": "Полководец, святой Русской православной церкви. ",
+    "isBlocked": false
+  },
+  "company": {
+    "id": 10000,
+    "companyName": "Княжество Московское+",
+    "description": "Великое княжение+",
+    "isActivity": true
+  },
+  "userjob": {
+    "id": 10000,
+    "description": "Великий князь Владимирский+",
+    "isActivity": true
+  }
+}
+
+<> 2023-06-28T175441.200.json
+
+###
+
+POST http://localhost:8080/create-userjob
+Content-Type: application/json
+Content-Length: 590
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "user": {
+    "familyName": "Невский",
+    "middleName": "",
+    "firstName": "Александр",
+    "birthday": "1221-05-13",
+    "gender": "M",
+    "age": 803,
+    "description": "Полководец, святой Русской православной церкви.",
+    "isBlocked": false
+  },
+  "company": {
+    "companyName": "Княжество Московское",
+    "description": "Великое княжение",
+    "isActivity": true
+  },
+  "userjob": {
+    "description": "Великий князь Владимирский",
+    "isActivity": true
+  }
+}
+
+###
+
+GET http://localhost:8080/get-userjob?user=1001
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-28T175424.200.json
+
+###
+
+GET http://localhost:8080/get-userjob?company=1000
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-28T175408.200.json
+
+###
+
+GET http://localhost:8080/get-userjob?company=1001
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-28T175357.200.json
+
+###
+
+GET http://localhost:8080/get-userjob?user=1001
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-28T175351.200.json
+
+###
+
+POST http://localhost:8080/create-userjob
+Content-Type: application/json
+Content-Length: 590
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "user": {
+    "familyName": "Невский",
+    "middleName": "",
+    "firstName": "Александр",
+    "birthday": "1221-05-13",
+    "gender": "M",
+    "age": 803,
+    "description": "Полководец, святой Русской православной церкви.",
+    "isBlocked": false
+  },
+  "company": {
+    "companyName": "Княжество Московское",
+    "description": "Великое княжение",
+    "isActivity": true
+  },
+  "userjob": {
+    "description": "Великий князь Владимирский",
+    "isActivity": true
+  }
+}
+
+###
+
+POST http://localhost:8080/create-userjob
+Content-Type: application/json
+Content-Length: 590
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "user": {
+    "familyName": "Невский",
+    "middleName": "",
+    "firstName": "Александр",
+    "birthday": "1221-05-13",
+    "gender": "M",
+    "age": 803,
+    "description": "Полководец, святой Русской православной церкви.",
+    "isBlocked": false
+  },
+  "company": {
+    "companyName": "Княжество Московское",
+    "description": "Великое княжение",
+    "isActivity": true
+  },
+  "userjob": {
+    "description": "Великий князь Владимирский",
+    "isActivity": true
+  }
+}
+
+###
+
+POST http://localhost:8080/create-userjob
+Content-Type: application/json
+Content-Length: 590
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "user": {
+    "familyName": "Невский",
+    "middleName": "",
+    "firstName": "Александр",
+    "birthday": "1221-05-13",
+    "gender": "M",
+    "age": 803,
+    "description": "Полководец, святой Русской православной церкви.",
+    "isBlocked": false
+  },
+  "company": {
+    "companyName": "Княжество Московское",
+    "description": "Великое княжение",
+    "isActivity": true
+  },
+  "userjob": {
+    "description": "Великий князь Владимирский",
+    "isActivity": true
+  }
+}
+
+###
+
+POST http://localhost:8080/create-userjob
+Content-Type: application/json
+Content-Length: 590
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "user": {
+    "familyName": "Невский",
+    "middleName": "",
+    "firstName": "Александр",
+    "birthday": "1221-05-13",
+    "gender": "M",
+    "age": 803,
+    "description": "Полководец, святой Русской православной церкви.",
+    "isBlocked": false
+  },
+  "company": {
+    "companyName": "Княжество Московское",
+    "description": "Великое княжение",
+    "isActivity": true
+  },
+  "userjob": {
+    "description": "Великий князь Владимирский",
+    "isActivity": true
+  }
+}
+
+###
+
+POST http://localhost:8080/create-userjob
+Content-Type: application/json
+Content-Length: 590
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "user": {
+    "familyName": "Невский",
+    "middleName": "",
+    "firstName": "Александр",
+    "birthday": "1221-05-13",
+    "gender": "M",
+    "age": 803,
+    "description": "Полководец, святой Русской православной церкви.",
+    "isBlocked": false
+  },
+  "company": {
+    "companyName": "Княжество Московское",
+    "description": "Великое княжение",
+    "isActivity": true
+  },
+  "userjob": {
+    "description": "Великий князь Владимирский",
+    "isActivity": true
+  }
+}
+
+<> 2023-06-28T171824.500.json
+
+###
+
+POST http://localhost:8080/create-userjob
+Content-Type: application/json
+Content-Length: 590
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "user": {
+    "familyName": "Невский",
+    "middleName": "",
+    "firstName": "Александр",
+    "birthday": "1221-05-13",
+    "gender": "M",
+    "age": 803,
+    "description": "Полководец, святой Русской православной церкви.",
+    "isBlocked": false
+  },
+  "company": {
+    "companyName": "Княжество Московское",
+    "description": "Великое княжение",
+    "isActivity": true
+  },
+  "userjob": {
+    "description": "Великий князь Владимирский",
+    "isActivity": true
+  }
+}
+
+<> 2023-06-28T171006.500.json
+
+###
+
+POST http://localhost:8080/create-userjob
+Content-Type: application/json
+Content-Length: 590
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "user": {
+    "familyName": "Невский",
+    "middleName": "",
+    "firstName": "Александр",
+    "birthday": "1221-05-13",
+    "gender": "M",
+    "age": 803,
+    "description": "Полководец, святой Русской православной церкви.",
+    "isBlocked": false
+  },
+  "company": {
+    "companyName": "Княжество Московское",
+    "description": "Великое княжение",
+    "isActivity": true
+  },
+  "userjob": {
+    "description": "Великий князь Владимирский",
+    "isActivity": true
+  }
+}
+
+###
+
+PATCH http://localhost:8080/update-userjob
+Content-Type: application/json
+Content-Length: 645
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "user": {
+    "id": 1000,
+    "familyName": "Невский+",
+    "middleName": "+",
+    "firstName": "Александр+",
+    "birthday": "1221-05-13",
+    "gender": "M",
+    "age": 803,
+    "description": "Полководец, святой Русской православной церкви. ",
+    "isBlocked": false
+  },
+  "company": {
+    "id": 1000,
+    "companyName": "Княжество Московское+",
+    "description": "Великое княжение+",
+    "isActivity": true
+  },
+  "userjob": {
+    "id": 1000,
+    "description": "Великий князь Владимирский+",
+    "isActivity": true
+  }
+}
+
+<> 2023-06-28T145642.200.json
+
+###
+
+POST http://localhost:8080/create-userjob
+Content-Type: application/json
+Content-Length: 590
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "user": {
+    "familyName": "Невский",
+    "middleName": "",
+    "firstName": "Александр",
+    "birthday": "1221-05-13",
+    "gender": "M",
+    "age": 803,
+    "description": "Полководец, святой Русской православной церкви.",
+    "isBlocked": false
+  },
+  "company": {
+    "companyName": "Княжество Московское",
+    "description": "Великое княжение",
+    "isActivity": true
+  },
+  "userjob": {
+    "description": "Великий князь Владимирский",
+    "isActivity": true
+  }
+}
+
+###
+
+GET http://localhost:8080/get-userjob?company=1001
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-28T145507.200.json
+
+###
+
+GET http://localhost:8080/get-userjob?user1=1001
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:8080/get-userjob?user=1001
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-28T145423.200.json
+
+###
+
+GET http://localhost:8080/get-userjob?user=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:8080/get-userjob?user=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-28T131311.200.json
+
+###
+
+GET http://localhost:8080/get-userjob?company=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-28T131248.200.json
+
+###
+
+GET http://localhost:8080/get-userjob?user=177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+PATCH http://localhost:8080/update-userjob
+Content-Type: application/json
 Content-Length: 645
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
@@ -615,538 +1063,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2023-06-28T083839.200.json
-
-###
-
-POST http://localhost:8080/create-userjob
-Content-Type: application/json
-Content-Length: 591
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "user": {
-    "familyName": "Невский",
-    "middleName": "",
-    "firstName": "Александр",
-    "birthday": "1221-05-13",
-    "gender": "M",
-    "age": 803,
-    "description": "Полководец, святой Русской православной церкви. ",
-    "isBlocked": false
-  },
-  "company": {
-    "companyName": "Княжество Московское",
-    "description": "Великое княжение",
-    "isActivity": true
-  },
-  "userjob": {
-    "description": "Великий князь Владимирский",
-    "isActivity": true
-  }
-}
-
-###
-
-PATCH http://localhost:8080/update-userjob
-Content-Type: application/json
-Content-Length: 645
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "user": {
-    "id": 1000,
-    "familyName": "Невский+",
-    "middleName": "+",
-    "firstName": "Александр+",
-    "birthday": "1221-05-13",
-    "gender": "M",
-    "age": 803,
-    "description": "Полководец, святой Русской православной церкви. ",
-    "isBlocked": false
-  },
-  "company": {
-    "id": 1000,
-    "companyName": "Княжество Московское+",
-    "description": "Великое княжение+",
-    "isActivity": true
-  },
-  "userjob": {
-    "id": 1000,
-    "description": "Великий князь Владимирский+",
-    "isActivity": true
-  }
-}
-
-<> 2023-06-28T083504.500.json
-
-###
-
-PATCH http://localhost:8080/update-userjob
-Content-Type: application/json
-Content-Length: 645
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "user": {
-    "id": 1000,
-    "familyName": "Невский+",
-    "middleName": "+",
-    "firstName": "Александр+",
-    "birthday": "1221-05-13",
-    "gender": "M",
-    "age": 803,
-    "description": "Полководец, святой Русской православной церкви. ",
-    "isBlocked": false
-  },
-  "company": {
-    "id": 1000,
-    "companyName": "Княжество Московское+",
-    "description": "Великое княжение+",
-    "isActivity": true
-  },
-  "userjob": {
-    "id": 1000,
-    "description": "Великий князь Владимирский+",
-    "isActivity": true
-  }
-}
-
-<> 2023-06-28T083302.500.json
-
-###
-
-POST http://localhost:8080/create-userjob
-Content-Type: application/json
-Content-Length: 591
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "user": {
-    "familyName": "Невский",
-    "middleName": "",
-    "firstName": "Александр",
-    "birthday": "1221-05-13",
-    "gender": "M",
-    "age": 803,
-    "description": "Полководец, святой Русской православной церкви. ",
-    "isBlocked": false
-  },
-  "company": {
-    "companyName": "Княжество Московское",
-    "description": "Великое княжение",
-    "isActivity": true
-  },
-  "userjob": {
-    "description": "Великий князь Владимирский",
-    "isActivity": true
-  }
-}
-
-###
-
-PATCH http://localhost:8080/update-userjob
-Content-Type: application/json
-Content-Length: 642
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "user": {
-    "id": 1000,
-    "familyName": "Невский+",
-    "middleName": "+",
-    "firstName": "Александр+",
-    "birthday": "1221-05-13",
-    "gender": "M",
-    "age": 803,
-    "description": "Полководец, святой Русской православной церкви. ",
-    "isBlocked": false
-  },
-  "company": {
-    "id": 1000,
-    "companyName": "Княжество Московское",
-    "description": "Великое княжение",
-    "isActivity": true
-  },
-  "userjob": {
-    "id": 1000,
-    "description": "Великий князь Владимирский",
-    "isActivity": true
-  }
-}
-
-###
-
-POST http://localhost:8080/create-userjob
-Content-Type: application/json
-Content-Length: 591
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "user": {
-    "familyName": "Невский",
-    "middleName": "",
-    "firstName": "Александр",
-    "birthday": "1221-05-13",
-    "gender": "M",
-    "age": 803,
-    "description": "Полководец, святой Русской православной церкви. ",
-    "isBlocked": false
-  },
-  "company": {
-    "companyName": "Княжество Московское",
-    "description": "Великое княжение",
-    "isActivity": true
-  },
-  "userjob": {
-    "description": "Великий князь Владимирский",
-    "isActivity": true
-  }
-}
-
-###
-
-POST http://localhost:8080/create-userjob
-Content-Type: application/json
-Content-Length: 591
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "user": {
-    "familyName": "Невский",
-    "middleName": "",
-    "firstName": "Александр",
-    "birthday": "1221-05-13",
-    "gender": "M",
-    "age": 803,
-    "description": "Полководец, святой Русской православной церкви. ",
-    "isBlocked": false
-  },
-  "company": {
-    "companyName": "Княжество Московское",
-    "description": "Великое княжение",
-    "isActivity": true
-  },
-  "userjob": {
-    "description": "Великий князь Владимирский",
-    "isActivity": true
-  }
-}
-
-###
-
-PATCH http://localhost:8080/update-userjob
-Content-Type: application/json
-Content-Length: 594
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "user": {
-    "familyName": "Невский+",
-    "middleName": "+",
-    "firstName": "Александр+",
-    "birthday": "1221-05-13",
-    "gender": "M",
-    "age": 803,
-    "description": "Полководец, святой Русской православной церкви. ",
-    "isBlocked": false
-  },
-  "company": {
-    "companyName": "Княжество Московское",
-    "description": "Великое княжение",
-    "isActivity": true
-  },
-  "userjob": {
-    "description": "Великий князь Владимирский",
-    "isActivity": true
-  }
-}
-
-###
-
-PATCH http://localhost:8080/update-userjob
-Content-Type: application/json
-Content-Length: 594
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "user": {
-    "familyName": "Невский+",
-    "middleName": "+",
-    "firstName": "Александр+",
-    "birthday": "1221-05-13",
-    "gender": "M",
-    "age": 803,
-    "description": "Полководец, святой Русской православной церкви. ",
-    "isBlocked": false
-  },
-  "company": {
-    "companyName": "Княжество Московское",
-    "description": "Великое княжение",
-    "isActivity": true
-  },
-  "userjob": {
-    "description": "Великий князь Владимирский",
-    "isActivity": true
-  }
-}
-
-###
-
-POST http://localhost:8080/create-userjob
-Content-Type: application/json
-Content-Length: 591
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "user": {
-    "familyName": "Невский",
-    "middleName": "",
-    "firstName": "Александр",
-    "birthday": "1221-05-13",
-    "gender": "M",
-    "age": 803,
-    "description": "Полководец, святой Русской православной церкви. ",
-    "isBlocked": false
-  },
-  "company": {
-    "companyName": "Княжество Московское",
-    "description": "Великое княжение",
-    "isActivity": true
-  },
-  "userjob": {
-    "description": "Великий князь Владимирский",
-    "isActivity": true
-  }
-}
-
-###
-
-GET http://localhost:8080/get-userjob?user=1
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-27T174528.200.json
-
-###
-
-GET http://localhost:8080/get-userjob?user=1
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-27T174423.200.json
-
-###
-
-GET http://localhost:8080/get-userjob?company=1
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-27T173559.500.json
-
-###
-
-GET http://localhost:8080/get-userjob?user=1
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-27T173427.500.json
-
-###
-
-GET http://localhost:8080/get-userjob?user=1
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-27T173214.500.json
-
-###
-
-GET http://localhost:8080/get-userjob?user=1
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-27T173044.500.json
-
-###
-
-GET http://localhost:8080/get-userjob?user=1
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-27T172914.500.json
-
-###
-
-POST http://localhost:8080/create-userjob
-Content-Type: application/json
-Content-Length: 565
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "user": {
-    "familyName": "fam",
-    "middleName": "mid",
-    "firstName": "first",
-    "birthday": "1911-10-10",
-    "gender": "M",
-    "age": 112,
-    "description": "u_descr",
-    "isBlocked": false,
-    "created": "2000-01-10T11:22:33",
-    "updated": ""
-  },
-  "company": {
-    "companyName": "CompanyName",
-    "description": "c_descr",
-    "isActivity": true,
-    "created": "2000-01-10T11:22:33",
-    "updated": ""
-  },
-  "userjob": {
-    "description": "uj_descr",
-    "isActivity": true,
-    "created": "2000-01-10T11:22:33",
-    "updated": ""
-  }
-}
-
-###
-
-GET http://localhost:8080/get-userjob?user=1
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-27T172602.500.json
-
-###
-
-PATCH http://localhost:8080/update-userjob
-Content-Type: application/json
-Content-Length: 239
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "user": {
-    "id": 1000,
-    "age": 999,
-    "created": "1812-01-01T11:22:33",
-    "updated": ""
-  },
-  "company": {
-    "id": 1000,
-    "companyName": "XXXXXXXX",
-    "description": "XXXXXXXX"
-  },
-  "userjob": {
-    "id": 1000
-  }
-}
-
-###
-
-POST http://localhost:8080/create-userjob
-Content-Type: application/json
-Content-Length: 565
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "user": {
-    "familyName": "fam",
-    "middleName": "mid",
-    "firstName": "first",
-    "birthday": "1911-10-10",
-    "gender": "M",
-    "age": 112,
-    "description": "u_descr",
-    "isBlocked": false,
-    "created": "2000-01-10T11:22:33",
-    "updated": ""
-  },
-  "company": {
-    "companyName": "CompanyName",
-    "description": "c_descr",
-    "isActivity": true,
-    "created": "2000-01-10T11:22:33",
-    "updated": ""
-  },
-  "userjob": {
-    "description": "uj_descr",
-    "isActivity": true,
-    "created": "2000-01-10T11:22:33",
-    "updated": ""
-  }
-}
-
-###
-
-POST http://localhost:8080/create-userjob
-Content-Type: application/json
-Content-Length: 565
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "user": {
-    "familyName": "fam",
-    "middleName": "mid",
-    "firstName": "first",
-    "birthday": "1911-10-10",
-    "gender": "M",
-    "age": 112,
-    "description": "u_descr",
-    "isBlocked": false,
-    "created": "2000-01-10T11:22:33",
-    "updated": ""
-  },
-  "company": {
-    "companyName": "CompanyName",
-    "description": "c_descr",
-    "isActivity": true,
-    "created": "2000-01-10T11:22:33",
-    "updated": ""
-  },
-  "userjob": {
-    "description": "uj_descr",
-    "isActivity": true,
-    "created": "2000-01-10T11:22:33",
-    "updated": ""
-  }
-}
 
 ###
 

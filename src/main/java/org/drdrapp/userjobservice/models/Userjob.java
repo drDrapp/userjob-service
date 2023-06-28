@@ -2,8 +2,7 @@ package org.drdrapp.userjobservice.models;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
@@ -12,6 +11,9 @@ import java.time.LocalDateTime;
 @Entity
 @Getter
 @Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "userjob_info")
 public class Userjob {
     public static final int START_SEQ = 1000;
@@ -25,13 +27,13 @@ public class Userjob {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id", foreignKey = @ForeignKey(name = "userjob_info_user_id_fk"))
     @OnDelete(action = OnDeleteAction.CASCADE)
-    @JsonBackReference
+    @JsonBackReference("user")
     Users user;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "company_id", foreignKey = @ForeignKey(name = "userjob_info_company_id_fk"))
     @OnDelete(action = OnDeleteAction.CASCADE)
-    @JsonBackReference
+    @JsonBackReference("company")
     Company company;
 
     @Column(name = "description")

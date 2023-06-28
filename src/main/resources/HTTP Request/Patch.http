@@ -3,7 +3,7 @@ Content-Type: application/json
 
 {
   "user": {
-    "id": 1000,
+    "id": 10000,
     "familyName": "Невский+",
     "middleName": "+",
     "firstName": "Александр+",
@@ -14,13 +14,13 @@ Content-Type: application/json
     "isBlocked": false
   },
   "company": {
-    "id": 1000,
+    "id": 10000,
     "companyName": "Княжество Московское+",
     "description": "Великое княжение+",
     "isActivity": true
   },
   "userjob": {
-    "id": 1000,
+    "id": 10000,
     "description": "Великий князь Владимирский+",
     "isActivity": true
   }
