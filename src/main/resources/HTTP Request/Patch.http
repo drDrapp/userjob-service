@@ -1,0 +1,27 @@
+PATCH http://localhost:8080/update-userjob
+Content-Type: application/json
+
+{
+  "user": {
+    "id": 1000,
+    "familyName": "Невский+",
+    "middleName": "+",
+    "firstName": "Александр+",
+    "birthday": "1221-05-13",
+    "gender": "M",
+    "age": 803,
+    "description": "Полководец, святой Русской православной церкви. ",
+    "isBlocked": false
+  },
+  "company": {
+    "id": 1000,
+    "companyName": "Княжество Московское+",
+    "description": "Великое княжение+",
+    "isActivity": true
+  },
+  "userjob": {
+    "id": 1000,
+    "description": "Великий князь Владимирский+",
+    "isActivity": true
+  }
+}

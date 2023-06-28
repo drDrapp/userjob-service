@@ -1,0 +1,24 @@
+POST http://localhost:8080/create-userjob
+Content-Type: application/json
+
+{
+  "user": {
+    "familyName": "Невский",
+    "middleName": "",
+    "firstName": "Александр",
+    "birthday": "1221-05-13",
+    "gender": "M",
+    "age": 803,
+    "description": "Полководец, святой Русской православной церкви.",
+    "isBlocked": false
+  },
+  "company": {
+    "companyName": "Княжество Московское",
+    "description": "Великое княжение",
+    "isActivity": true
+  },
+  "userjob": {
+    "description": "Великий князь Владимирский",
+    "isActivity": true
+  }
+}
