@@ -16,6 +16,7 @@ import org.drdrapp.userjobservice.repository.UserjobRepository;
 import org.drdrapp.userjobservice.utils.Utils;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -45,6 +46,7 @@ public class UserjobService {
         return userjobRepository.getCompanyActiveUsersDto(company);
     }
 
+    @Transactional
     public Boolean createUserjob(RequestDto requestDto) {
         boolean result = false;
         if ((requestDto.getUser() != null) && (requestDto.getCompany() != null)) {
@@ -69,6 +71,7 @@ public class UserjobService {
         return result;
     }
 
+    @Transactional
     public List<String> updateUserjob(RequestDto requestDto) throws IllegalAccessException {
         boolean isExeption = false;
         boolean needUpdateUser = false;

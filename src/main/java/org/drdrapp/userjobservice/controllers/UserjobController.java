@@ -11,7 +11,6 @@ import org.drdrapp.userjobservice.models.Users;
 import org.drdrapp.userjobservice.services.UserjobService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -50,7 +49,6 @@ public class UserjobController {
     }
 
     @PostMapping(value = "/create-userjob")
-    @Transactional
     public ResponseEntity<?> createData(@RequestBody RequestDto requestDto) {
         if (userjobService.createUserjob(requestDto)) {
             return ResponseEntity
@@ -64,7 +62,6 @@ public class UserjobController {
     }
 
     @PatchMapping("/update-userjob")
-    @Transactional
     public ResponseEntity<List<String>> updateDate(@RequestBody RequestDto requestDto) throws IllegalAccessException {
         List<String> changedFields = userjobService.updateUserjob(requestDto);
         if (changedFields == null) {

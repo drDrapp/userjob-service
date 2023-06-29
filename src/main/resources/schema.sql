@@ -32,7 +32,7 @@ CREATE TABLE company
     is_activity  BOOLEAN,
     created      TIMESTAMP,
     updated      TIMESTAMP,
-    PRIMARY KEY (id)
+    PRIMARY KEY (id),
 );
 
 CREATE SEQUENCE company_seq AS LONG START WITH 10000;
@@ -46,7 +46,9 @@ CREATE TABLE userjob_info
     is_activity BOOLEAN,
     created     TIMESTAMP,
     updated     TIMESTAMP,
-    PRIMARY KEY (id)
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (company_id) REFERENCES company(id)
 );
 
 CREATE SEQUENCE userjob_info_seq AS LONG START WITH 10000;
